@@ -19,7 +19,7 @@ def Inicio():
             nivel_1()
             break
         else:
-            print("Entrada no válida")
+            print("Entrada no válida\n")
             break
 
 #################################### NIVEL 1 #############################################
@@ -51,7 +51,7 @@ def nivel_1():
 
                 while True:
                     
-                    print("¿Quieres volver a jugar?")
+                    print("¿Quieres volver a jugar?\n")
                     perder = input("Pulse Y para ir a inicio o N para salir: ") 
                     
                     if perder == 'Y':
@@ -59,7 +59,7 @@ def nivel_1():
                         break
 
                     elif perder == 'N':
-                        print("Gracias por jugar :D")
+                        print("Gracias por jugar \u2665")
                         break
                     else:
                         print("Tiene que ser Yes o No ")
@@ -69,7 +69,7 @@ def nivel_1():
                     break
 
         except ValueError:
-            print("Tiene que ser un número entero..")
+            print("Tiene que ser un número entero...Vuelva a intentarlo\n")
             
 #################################### NIVEL 2 #############################################
 
@@ -104,14 +104,14 @@ def nivel_2():
                 print("Todavía no eres un Maestro Jedi de las matemáticas.")
                 
                 while True:
-                    print("¿Quieres volver a jugar?")
+                    print("¿Quieres volver a jugar?\n")
                     perder = input("Pulse Y para ir a inicio o N para salir: ") 
                     if perder == 'Y':
                         Inicio()
                         break
                     
                     elif perder == 'N':
-                        print("Gracias por jugar :D")
+                        print("Gracias por jugar \u2665")
                         break
                     else:
                         print("Tiene que ser Yes o No ")
@@ -119,7 +119,7 @@ def nivel_2():
                 if perder == 'N':
                     break        
         except ValueError:
-            print("Tiene que ser un número entero..")
+            print("Tiene que ser un número entero...Vuelva a intentarlo\n")
 
 #################################### NIVEL 3 #############################################
 
@@ -153,7 +153,7 @@ def nivel_3():
                         
                 while True:
                     
-                    print("¿Quieres volver a jugar?")
+                    print("¿Quieres volver a jugar?\n")
                     perder = input("Pulse Y para ir a inicio o N para salir: ")        
                     
                     if perder == 'Y':
@@ -161,7 +161,7 @@ def nivel_3():
                         break
                             
                     elif perder == 'N':
-                        print("Gracias por jugar :D")
+                        print("Gracias por jugar \u2665")
                         break 
                     else:
                         print("Tiene que ser Yes o No ")
@@ -169,7 +169,7 @@ def nivel_3():
                 if perder == 'N':
                     break        
         except ValueError:
-            print("Tiene que ser un número entero..")
+            print("Tiene que ser un número entero...Vuelva a intentarlo\n")
         
 #################################### NIVEL 4 #############################################        
     
@@ -209,7 +209,7 @@ def nivel_4():
                                 
                 while True:
                             
-                    print("¿Quieres volver a jugar?")
+                    print("¿Quieres volver a jugar?\n")
                     perder = input("Pulse Y para ir a inicio o N para salir: ")        
                             
                     if perder == 'Y':
@@ -217,7 +217,7 @@ def nivel_4():
                         break
                                     
                     elif perder == 'N':
-                        print("Gracias por jugar :D")
+                        print("Gracias por jugar \u2665")
                         break 
                     
                     else:
@@ -227,7 +227,7 @@ def nivel_4():
                     break 
                 
         except ValueError:
-                    print("Tiene que ser (1 o 0)....")
+                    print("Tiene que ser (1 o 0)....Vuelva a intentarlo\n")
 
 #################################### NIVEL 5 #############################################
 
@@ -261,7 +261,7 @@ def nivel_5():
                         
                 while True:
                     
-                    print("¿Quieres volver a jugar?")
+                    print("¿Quieres volver a jugar?\n")
                     perder = input("Pulse Y para ir a inicio o N para salir: ")        
                     
                     if perder == 'Y':
@@ -269,7 +269,7 @@ def nivel_5():
                         break
                             
                     elif perder == 'N':
-                        print("Gracias por jugar :D")
+                        print("Gracias por jugar \u2665")
                         break 
                     else:
                         print("Tiene que ser Yes o No ")
@@ -277,7 +277,7 @@ def nivel_5():
                 if perder == 'N':
                     break        
         except ValueError:
-            print("Tiene que ser un número entero..")
+            print("Tiene que ser un número entero...Vuelva a intentarlo\n")
 
 
 #################################### NIVEL 6 #############################################        
