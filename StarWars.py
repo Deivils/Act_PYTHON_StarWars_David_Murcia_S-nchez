@@ -16,7 +16,7 @@ def Inicio():
         iniciar = input("Pulse intro para continuar...")
         if iniciar == "":
             print("Nivel 1\n")
-            nivel1()
+            nivel_1()
             break
         else:
             print("Entrada no válida")
@@ -25,7 +25,7 @@ def Inicio():
 #################################### NIVEL 1 #############################################
 
 
-def nivel1():
+def nivel_1():
     S1 = random.randint(1, 10)
     S2 = random.randint(20, 30)
     
@@ -42,8 +42,8 @@ def nivel1():
             respuesta_sumatorio = int(input("¿Qué debe introducir?..  "))
             sumatorio = sum(range(S1, S2 + 1))
             if respuesta_sumatorio == sumatorio:
-                print("Nivel 2")
-                nivel2()
+                print("Nivel 2\n")
+                nivel_2()
                 break
             else: 
                 print("Ese no era el código correcto... La misión ha sido un fracaso... :(:(:(")
@@ -73,7 +73,7 @@ def nivel1():
             
 #################################### NIVEL 2 #############################################
 
-def nivel2():
+def nivel_2():
     P1 = random.randint(1, 7)
     P2 = random.randint(8, 12)
     
@@ -97,7 +97,7 @@ def nivel2():
             productorio = math.prod(range(P1, P2 + 1))
             if respuesta_Nivel2 == productorio:
                 print("Nivel 3\n")
-                nivel3()
+                nivel_3()
                 break
             else:
                 print("Ese no era el código correcto... La misión ha sido un fracaso... :(:(:(")
@@ -123,7 +123,7 @@ def nivel2():
 
 #################################### NIVEL 3 #############################################
 
-def nivel3():
+def nivel_3():
     N = random.randint(50, 100)
     
     while True:
@@ -145,7 +145,7 @@ def nivel3():
             numero = math.floor(N // 10)
             if respuesta_Nivel3 == math.factorial(numero): # Factorizo la variable número
                 print("Nivel 4\n")
-                nivel4()
+                nivel_4()
                 break
             else:
                 print("Ese no era el código correcto... La misión ha sido un fracaso... :(:(:(")
@@ -173,7 +173,7 @@ def nivel3():
         
 #################################### NIVEL 4 #############################################        
     
-def nivel4():
+def nivel_4():
     P = random.randint(10, 100)
     es_primo = True
     if P <= 1:
@@ -201,7 +201,7 @@ def nivel4():
             
             if respuesta_Nivel4 == resultado: 
                 print("Nivel 5\n")
-                nivel5()
+                nivel_5()
                 break
             else:
                 print("Ese no era el código correcto... La misión ha sido un fracaso... :(:(:(")
@@ -231,7 +231,7 @@ def nivel4():
 
 #################################### NIVEL 5 #############################################
 
-def nivel5():
+def nivel_5():
     M = random.randint(5, 10)
     S = random.randint(5, 10)
 
@@ -253,7 +253,7 @@ def nivel5():
             
             if respuesta_Nivel5 == resultado: 
                 print("Nivel 6\n")
-                nivel6()
+                nivel_6()
                 break
             else:
                 print("Ese no era el código correcto... La misión ha sido un fracaso... :(:(:(")
@@ -282,7 +282,7 @@ def nivel5():
 
 #################################### NIVEL 6 #############################################        
 
-def nivel6():
+def nivel_6():
 
     print("Luke Skywalker introduce el tiempo correcto, activa el temporizador")
     print("y empiezan a sonar las alarmas. Salen de allí corriendo, no hay")
